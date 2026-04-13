@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Ahmed",
+    "picture": "https://i.pravatar.cc/150?u=sarah",
+    "email": "sarah.a@example.com",
+    "days_since_contact": 5,
+    "status": "connected",
+    "tags": ["family", "close friend"],
+    "bio": "Older sister. Always there for career advice.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "picture": "https://i.pravatar.cc/150?u=john",
+    "email": "jsmith.work@example.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["work", "colleague"],
+    "bio": "Former manager from the tech firm. Great mentor.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 3,
+    "name": "Emma Wilson",
+    "picture": "https://i.pravatar.cc/150?u=emma",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 12,
+    "status": "connected",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. Love hiking together.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Michael Ross",
+    "picture": "https://i.pravatar.cc/150?u=mike",
+    "email": "m.ross@law.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["work", "mentor"],
+    "bio": "Brilliant legal mind. Met during the 2024 internship.",
+    "goal": 30,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 5,
+    "name": "Priya Das",
+    "picture": "https://i.pravatar.cc/150?u=priya",
+    "email": "priya.design@example.com",
+    "days_since_contact": 1,
+    "status": "connected",
+    "tags": ["hobby", "design"],
+    "bio": "Figma expert. We discuss UI trends every week.",
+    "goal": 7,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "David Miller",
+    "picture": "https://i.pravatar.cc/150?u=david",
+    "email": "dave.m@example.com",
+    "days_since_contact": 12,
+    "status": "connected",
+    "tags": ["high school", "old friend"],
+    "bio": "Childhood friend. We share a love for retro gaming.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 7,
+    "name": "Lisa Ray",
+    "picture": "https://i.pravatar.cc/150?u=lisa",
+    "email": "lisa.ray@example.com",
+    "days_since_contact": 8,
+    "status": "connected",
+    "tags": ["neighbor", "hobby"],
+    "bio": "Lives next door. Part of the local gardening club.",
+    "goal": 10,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 8,
+    "name": "Arjun Kapur",
+    "picture": "https://i.pravatar.cc/150?u=arjun",
+    "email": "arjun.k@example.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["college", "travel"],
+    "bio": "Travel buddy from the 2023 Europe trip.",
+    "goal": 30,
+    "next_due_date": "2026-02-14"
+  }
+]

@@ -1,8 +1,10 @@
 import { useState } from 'react'
 
 import { Routes, Route, NavLink, Link } from 'react-router-dom';
-import { Home as HomeIcon, Clock, BarChart3 } from 'lucide-react'; // Icons
+import { Home as HomeIcon, Clock, BarChart3} from 'lucide-react'; // Icons
 import logo from './assets/logo.png';
+import Home from './pages/Home';
+
 
 function App() {
   // Logic for the button highlighting
@@ -48,13 +50,15 @@ function App() {
 
       <main className="container mx-auto">
         <Routes>
-          <Route path ="/" element={<div className="p-10 text-3xl font-bold text-gray-800">Home Page</div>}/>
+          <Route path ="/" element={<Home/>}/>
 
           <Route path ="/timeline" element={<div className="p-10 text-3xl font-bold text-gray-800">Timeline Page</div>}
           />
           <Route path ="/stats" element={<div className="p-10 text-3xl font-bold text-gray-800">Stats Page</div>} />
         </Routes>
       </main>
+      
+      
     </div>
   );
 }

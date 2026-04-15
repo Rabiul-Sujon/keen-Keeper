@@ -4,6 +4,7 @@ import { Routes, Route, NavLink, Link } from 'react-router-dom';
 import { Home as HomeIcon, Clock, BarChart3} from 'lucide-react'; // Icons
 import logo from './assets/logo.png';
 import Home from './pages/Home';
+import Footer from './pages/Footer';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     }`;
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="flex flex-col min-h-screen bg-slate-50">
       <nav className="navbar bg-white shadow-sm border-b border-slate-100 px-15 h-20">
         <div className="flex-1">
           <Link to="/" className="flex items-center gap-2">
@@ -48,7 +49,7 @@ function App() {
         </div>
       </nav>
 
-      <main className="container mx-auto">
+      <main className="container mx-auto flex-grow">
         <Routes>
           <Route path ="/" element={<Home/>}/>
 
@@ -57,6 +58,8 @@ function App() {
           <Route path ="/stats" element={<div className="p-10 text-3xl font-bold text-gray-800">Stats Page</div>} />
         </Routes>
       </main>
+      
+      <Footer/>
       
       
     </div>

@@ -9,6 +9,7 @@ import Footer from './pages/Footer';
 import { Toaster } from 'react-hot-toast';
 import Timeline from './pages/Timeline';
 import Stats from './pages/Stats';
+import NotFound from './pages/NotFound';
 
 
 
@@ -66,6 +67,7 @@ function App() {
           />
           <Route path="/friend/:id" element={<FriendDetails />} />
           <Route path ="/stats" element={<Stats/>}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
 

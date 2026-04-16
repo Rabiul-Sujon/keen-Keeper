@@ -31,7 +31,7 @@ function App() {
       <nav className="navbar bg-white shadow-sm border-b border-slate-100 px-15 h-20">
         <div className="flex-1">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logo} alt="Logo" className="h-10 w-auto object-contain filter brightness-125 contrast-120 saturate-150 scale-110 drop-shadow-sm"/>
+            <img src={logo} alt="Logo" className="h-5 md:h-10 w-auto object-contain filter brightness-125 contrast-120 saturate-150 scale-110 drop-shadow-sm"/>
           </Link>
         </div>
 
@@ -40,19 +40,19 @@ function App() {
             <li>
               <NavLink to="/" className={navLinkStyles}>
                 <HomeIcon size={20} />
-                <span>Home</span>
+                <span className="hidden sm:inline">Home</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/timeline" className={navLinkStyles}>
                 <Clock size={20} />
-                <span>Timeline</span>
+                <span className="hidden sm:inline">Timeline</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="/stats" className={navLinkStyles}>
                 <BarChart3 size={20} />
-                <span>Stats</span>
+                <span className="hidden sm:inline">Stats</span>
               </NavLink>
             </li>
           </ul>

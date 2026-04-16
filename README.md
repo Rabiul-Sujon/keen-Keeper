@@ -1,16 +1,33 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Name: Keen-Keeper
 
-Currently, two official plugins are available:
+>> A personal friend relationship manager that helps to stay connected with the people who matter most.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+>> Links <<
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Live Site : keen-keeper-rabiul.netlify.app
+# Git Repo : https://github.com/Rabiul-Sujon/keen-Keeper
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+>> React.js — UI framework
+>> React Router DOM — Page navigation
+>> Tailwind CSS , daisyui — Styling and responsiveness
+>> Recharts — Friendship analytics pie chart
+>> React Hot Toast — Toast notifications
+>> Lucide React & React icons — Icons
+
+
+##  Key Features
+
+>> Friend Cards — View all friends with their status, tags, and last contact date
+
+>> Friend Details — See detailed info and log interactions via Call, Text, or Video
+
+>> Timeline — Track the interaction history with filter options.
+
+>> Friendship Analytics  — Visual pie chart showing the interaction patterns
+
+>> Fully Responsive — Works on mobile, tablet, and desktop.

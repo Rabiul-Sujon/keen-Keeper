@@ -8,7 +8,7 @@ const typeIcons = {
   Text: textIcon,
   Video: videoIcon,
 };
-
+// exporting function from here
 export default function Timeline() {
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState('All');

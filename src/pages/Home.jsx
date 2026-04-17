@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserPlus } from 'lucide-react';
-import friendsData from '../data/friends.json';
+
+// import friendsData from '../data/friends.json'; 
+//(galtisey mistake...)
 
 // Status color helper
 const getStatusStyle = (status) => {
@@ -73,23 +75,47 @@ function FriendCard({ friend }) {
 function Home() {
   const [friends, setFriends] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
 
-  useEffect(() => {
-    // Simulate loading
-    setTimeout(() => {
-      setFriends(friendsData);
-      setLoading(false);
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   // Simulate loading
+  //   setTimeout(() => {
+  //     setFriends(friendsData);
+  //     setLoading(false);
+  //   }, 1000);
+  // }, []);
+
+   useEffect(() => {
+    fetch('https://api.jsonbin.io/v3/b/69e20dce36566621a8c2b8c0')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to fetch');
+        return res.json();
+      })
+      .then(data => {
+        setFriends(data.record);
+        setLoading(false);
+      })
+      .catch(err => {
+         setError(err.message);
+        setLoading(false);
+      });
+
+   }, []);
 
   // Summary card calculation
   const totalFriends = friends.length;
-
   const onTrack = friends.filter(f => f.status === 'on-track').length;
-
   const needAttention = friends.filter(f => f.status === 'overdue' || f.status === 'almost-due').length;
-  
-  const interactionsThisMonth = 5; // from timeline.json
+  const interactionsThisMonth = 5; 
+
+   if (error) {
+    return (
+      <div className="flex justify-center py-20 text-red-500">
+        Failed to load friends: {error}
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50">

@@ -22,12 +22,14 @@
 
 ##  Key Features
 
->> Friend Cards — View all friends with their status, tags, and last contact date
+>> Friend Cards - View all friends with their status, tags, and last contact date
 
->> Friend Details — See detailed info and log interactions via Call, Text, or Video
+>> Friend Details - See detailed info and log interactions via Call, Text, or Video
 
->> Timeline — Track the interaction history with filter options.
+>> Timeline - Track the interaction history with filter options.
 
->> Friendship Analytics  — Visual pie chart showing the interaction patterns
+>> Friendship Analytics -  Visual pie chart showing the interaction patterns
 
->> Fully Responsive — Works on mobile, tablet, and desktop.
+>> Fully Responsive -  Works on mobile, tablet, and desktop.
+
+>> 404 - Customized 404 page .
